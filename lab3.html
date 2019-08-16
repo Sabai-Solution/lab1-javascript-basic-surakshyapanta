@@ -1,2 +1,35 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var studentList=[
+	{"sno":1,"name":"ram"},
+	{"sno":2,"name":"phurkima"}]
+	//create table
+	var my_table="<table border = '1'>";
+	my_table+="<tr><td>sno</td><td>name</td><tr>";
+    for(var i=0;i<studentList.length;i++){
+    	my_table+="<tr> <td>"+studentList[i].sno+"</td> <td>"+studentList[i].name+"</td> </tr>"
+    }
+	my_table+="</table";
+	document.write(my_table);
+	//table header columns
+	//table rows
+	/*//array declaration
+	//1st way
+	var table_head =["sno","name"];
+	//2nd way
+	var table_head =new Array();
+	table_head[0]="sno";
+	table_head[1]="name";
+//object declaration
+//1st way
+var student={"sno":1,"name":"ram"};
+//2nd way
+//(in copy) */
+</script>
+</body>
+</html>
